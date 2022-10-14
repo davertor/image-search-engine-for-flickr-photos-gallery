@@ -3,6 +3,8 @@
 
 # Image search engine for Flickr photos gallery 
 
+![app_example](imgs/app_example.png)
+
 <!-- TOC -->
 
 - [Image search engine for Flickr photos gallery](#image-search-engine-for-flickr-photos-gallery)
