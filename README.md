@@ -22,12 +22,8 @@ In this repository you will find a solution for downloading an album of images f
     ├───download_images.ipynb
     ├───get_images_embeddings.ipynb
     ├───image_search_engine.ipynb
-    ├───docker
-    ├───helm
-    └───terraform
-        ├───eks
-        ├───aks
-        └───gke
+    ├───embedding_model.py
+    ├───requirements.txt
 ```
 
 
