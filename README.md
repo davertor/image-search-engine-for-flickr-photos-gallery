@@ -3,6 +3,7 @@
 
 # Image search engine for Flickr photos gallery 
 
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/davertor/15k-nocturna-valencia-image-search)
 ![app_example](imgs/app_example.png)
 
 <!-- TOC -->
