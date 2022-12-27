@@ -22,6 +22,17 @@ Some weeks ago, I run the "15k nocturna valencia 2022" race and I wanted to find
 In this repository you will find a solution for downloading an album of images from Flickr by using Flickr_api. Additionally, we will sort the images based on their semantic content, retrieving the most relevant images for the album. The solution is composed of the following components:
 
 ```text
+│   .gitignore
+│   .pre-commit-config.yaml
+│   LICENSE
+│   pyproject.toml
+│   README.md
+│   requirements.txt
+│   setup.cfg
+│   setup.py
+│
+├───imgs
+│       ...
 │
 ├───notebooks
 │       download_images.ipynb
@@ -32,6 +43,8 @@ In this repository you will find a solution for downloading an album of images f
     └───image_search_engine
             download.py
             model.py
+            __init__.py
+
 ```
 
 
