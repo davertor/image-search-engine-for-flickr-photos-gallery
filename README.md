@@ -9,11 +9,11 @@
 <!-- TOC -->
 
 - [Image search engine for Flickr photos gallery](#image-search-engine-for-flickr-photos-gallery)
-    - [Prerequisites](#prerequisites)
-    - [Download images from Flickr](#download-images-from-flickr)
-    - [Save image embeddings](#save-image-embeddings)
-    - [Image search engine](#image-search-engine)
-    - [Contact](#contact)
+  - [Prerequisites](#prerequisites)
+  - [Download images from Flickr](#download-images-from-flickr)
+  - [Save image embeddings](#save-image-embeddings)
+  - [Image search engine](#image-search-engine)
+  - [Contact](#contact)
 
 <!-- /TOC -->
 
@@ -21,12 +21,17 @@ Some weeks ago, I run the "15k nocturna valencia 2022" race and I wanted to find
 
 In this repository you will find a solution for downloading an album of images from Flickr by using Flickr_api. Additionally, we will sort the images based on their semantic content, retrieving the most relevant images for the album. The solution is composed of the following components:
 
-```bash
-    ├───download_images.ipynb
-    ├───get_images_embeddings.ipynb
-    ├───image_search_engine.ipynb
-    ├───embedding_model.py
-    ├───requirements.txt
+```text
+│
+├───notebooks
+│       download_images.ipynb
+│       get_images_embeddings.ipynb
+│       image_search_engine.ipynb
+│
+└───src
+    └───image_search_engine
+            download.py
+            model.py
 ```
 
 
@@ -40,10 +45,12 @@ The required steps are the following:
 
 ## Prerequisites
 
-The first step is to install the required libraries. This project has been developed using Python 3.7.6. The required libraries are listed in the requirements.txt file. You can install them by using the following command:
+The first step is to install the required libraries. This project has been developed using Python 3.7.6. The required libraries are listed in the requirements.txt file. 
+
+You can install all the dependencies by using the following command:
 
 ```python
-pip install -r requirements.txt
+pip install .
 ```
 
 
