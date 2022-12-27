@@ -1,5 +1,7 @@
-__pycache__
+__pycache__/
+**/__pycache__/
 flickr_images/
 config.py
 gradio-space/
 fastapi_app/
+**/*egg-info/

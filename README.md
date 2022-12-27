@@ -1,7 +1,7 @@
 ![Made-love][made-love-shield]
-[![LinkedIn][linkedin-shield]](https://linkedin.com/daniel-verdu-torres) 
+[![LinkedIn][linkedin-shield]](https://linkedin.com/daniel-verdu-torres)
 
-# Image search engine for Flickr photos gallery 
+# Image search engine for Flickr photos gallery
 
 [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/davertor/15k-nocturna-valencia-image-search)
 ![app_example](imgs/app_example.png)
@@ -97,7 +97,7 @@ for page_nb in tqdm(range(1, pages_nb+1)):
         except Exception as e:
             print(e, 'Error saving photo: ' + filename)
             continue
-        
+
 print('Total photos downloaded: ' + str(current))
 ```
 
@@ -116,13 +116,13 @@ img_embeddings_np = None
 
 for i in tqdm(range(0, len(imgs_list), batch_size), unit='batch'):
     batch_img_paths = imgs_list[i:i+batch_size]
-    
+
     try:
         batch_embeddings = embed_model.encode_images(batch_img_paths, normalize=False)
     except Exception as e:
         print('Error in batch {}. {}'.format(i, e))
         continue
-    
+
     if img_embeddings_np is None:
         img_embeddings_np = batch_embeddings.copy()
     else:
@@ -132,11 +132,11 @@ for i in tqdm(range(0, len(imgs_list), batch_size), unit='batch'):
 img_embeddings_np /= np.linalg.norm(img_embeddings_np, ord=2, axis=-1, keepdims=True)
 
 print(img_embeddings_np.shape)
-```	
+```
 
 ## Image search engine
 
-Finally, we will implement a simple image search engine based on user text input and image embeddings. 
+Finally, we will implement a simple image search engine based on user text input and image embeddings.
 
 Now you have to open *image_search_engine.ipynb* script. The following code shows how to implement the search engine.
 
@@ -158,12 +158,12 @@ for i, img in enumerate(target_img_paths):
 plt.suptitle(text_search, fontsize=20)
 plt.tight_layout()
 plt.show()
-```	
+```
 
 
 ## Contact
 * Author - Daniel Verdú Torres
-* Linkedin - [Linkedin](https://linkedin.com/daniel-verdu-torres) 
+* Linkedin - [Linkedin](https://linkedin.com/daniel-verdu-torres)
 * Github - [@davertor](https://github.com/davertor)
 
 <!--  MARKDOWN LINKS & IMAGES -->
@@ -174,4 +174,4 @@ plt.show()
 [license-shield]: https://img.shields.io/badge/License-GNU-brightgreen.svg?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-darkblue.svg?style=for-the-badge&logo=linkedin
 [github-shield]: https://img.shields.io/badge/-Github-black.svg?style=for-the-badge&logo=github
-[twitter-shield]: https://img.shields.io/badge/-Twitter-blue.svg?style=for-the-badge&logo=twitter 
+[twitter-shield]: https://img.shields.io/badge/-Twitter-blue.svg?style=for-the-badge&logo=twitter
